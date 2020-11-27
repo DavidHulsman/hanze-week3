@@ -39,7 +39,7 @@
             }).addTo(mymap);
 
             {% for meting in metingen %}
-            L.marker([{{meting.lat}}, {meting.lng}]).addTo(mymap)
+            L.marker([{{meting.lat}}, {{meting.lng}}]).addTo(mymap)
             {% endfor %}
         </script>
     </div>
