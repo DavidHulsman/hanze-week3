@@ -9,7 +9,7 @@ def index():
     return render_template('index.html', metingen=Meting.query.all())
 
 @app.route('/table')
-def index():
+def table():
     """Toon de metingen in een tabel"""
     return render_template('table.html', metingen=Meting.query.all())
 
