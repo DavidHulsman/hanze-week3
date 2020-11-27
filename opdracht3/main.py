@@ -5,9 +5,13 @@ from models import app, db, Meting
 
 @app.route('/')
 def index():
-    """Toon de metingen"""
+    """Toon de metingen op een kaart"""
     return render_template('index.html', metingen=Meting.query.all())
 
+@app.route('/table')
+def index():
+    """Toon de metingen in een tabel"""
+    return render_template('table.html', metingen=Meting.query.all())
 
 @app.route('/m')
 def bewaar_nieuwe_meting():
