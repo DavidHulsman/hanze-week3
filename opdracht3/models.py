@@ -16,13 +16,4 @@ class Meting(db.Model):
     lng = db.Column(db.Float, nullable=False)
 
     def __repr__(self):
-        return f'Meting {self.meetwaarde}'
-
-
-class Test(db.Model):
-    __tablename__ = 'testen'
-    id = db.Column(db.Integer, primary_key=True)
-    startdatum = db.Column(db.DateTime, nullable=False)
-    einddatum = db.Column(db.DateTime, nullable=True)
-    meting = db.relationship(Meting)
-    meting_id = db.Column(db.Integer, db.ForeignKey('metingen.id'))
+        return f'Meting({self.uuid},{self.lat},{self.lng},'
