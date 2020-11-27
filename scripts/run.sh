@@ -1,3 +1,3 @@
 #!/bin/sh
 # Run this file with "./run.sh" to start the Flask webserver
-FLASK_APP=../website.py flask run
+FLASK_APP=../iot_meting_app.py flask run

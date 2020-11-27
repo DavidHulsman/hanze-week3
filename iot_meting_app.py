@@ -1,6 +1,6 @@
 from flask import render_template, request
 from datetime import datetime
-from models import app, db, Meting, Test
+from iot_basis import app, db, Meting
 
 
 @app.route('/')
