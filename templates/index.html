@@ -10,7 +10,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body class="container">
   <table class="table table-sm table-striped table-hover table-dark">
     <caption>List of measured values</caption>
     <thead class="thead-dark">
@@ -18,7 +18,8 @@
         <th scope="col">Tijd</th>
         <th scope="col">Waarde</th>
       </tr>
-    </thead>r <tbody>
+    </thead>
+    <tbody>
       {% for meting in metingen %}
       <tr>
         <td>{{meting.tijdstempel}}</td>
