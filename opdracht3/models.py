@@ -11,7 +11,7 @@ class Meting(db.Model):
     __tablename__ = 'metingen'
     id = db.Column(db.Integer, primary_key=True)
     tijdstempel = db.Column(db.DateTime, nullable=False)
-    uuid = db.Column(db.String, nullable=False)
+    uuid = db.Column(db.String(36), nullable=False)
     lat = db.Column(db.Float, nullable=False)
     lng = db.Column(db.Float, nullable=False)
 
